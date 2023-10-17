@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PostController::class, 'index'])
     ->name('root');
-    return view('message.hello');
 
 Route::get('/route/hello',function () {
     return '<h1>Hello from Route!</h1>';
@@ -33,8 +32,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-    Route::resource('posts', PostController::class);
-        // ->only(['create', 'store', 'edit', 'update', 'destroy'])
+    Route::resource('posts', PostController::class)
+        ->only(['create', 'store', 'edit', 'update', 'destroy'])
         ->middleware('auth');
 
     Route::resource('posts', PostController::class)
