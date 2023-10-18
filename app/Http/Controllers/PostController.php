@@ -50,17 +50,22 @@ class PostController extends Controller
             return back()->withInput()->withErrors($e->getMessage());
         }
         return redirect()
-            ->route('posts.show', $post);
+            ->route('posts.show', $post)
+            ->with('notice', '記事を登録しました');
     }
     /**
      * Display the specified resource.
      */
     public function show(string $id)
+    {
+      $post = Post::find($id);
+      return view('posts.show', compact('post')); 
+    }
+    
     /**
      * Show the form for creating a new resource.
      */
-    {
-    }
+    
 
     public function create()
     {
