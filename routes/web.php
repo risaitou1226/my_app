@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -38,6 +39,10 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('posts', PostController::class)
      ->only(['show', 'index']);
+
+    Route::resource('posts.comments', CommentController::class)
+        ->only(['create','store','edit','update','destroy'])
+        ->middleware('auth');
 
     require __DIR__.'/auth.php';
 
