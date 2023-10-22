@@ -39,7 +39,7 @@
              </div>
              <div class="mb-4">
                  <label class="block text-gray-700 text-sm mb-2" for="image">
-                     ブログ用画像
+                     写真を貼り付けてください
                  </label>
                  <img src="{{ $post->image_url }}" alt="" class="mb-4 md:w-2/5 sm:auto">
                  <input type="file" name="image" class="border-gray-300">
