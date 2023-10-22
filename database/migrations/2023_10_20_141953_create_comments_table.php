@@ -23,7 +23,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->timestamps();
         });
-        
+    }
     /**
      * Reverse the migrations.
      */
@@ -32,3 +32,4 @@ return new class extends Migration
         Schema::dropIfExists('comments');
     }
 };
+
