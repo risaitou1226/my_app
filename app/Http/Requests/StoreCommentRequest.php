@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace App\Http\Requests;
 
@@ -11,7 +11,8 @@ class StoreCommentRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        // 今回は使用しないのでtrueを返す
+        return true;
     }
 
     /**
@@ -23,6 +24,14 @@ class StoreCommentRequest extends FormRequest
     {
         return [
             //
+            'body' => 'required|string|max:200',
+        ];
+    }
+
+    public function attributes()
+    {
+        return [
+            'body'=>'コメント',
         ];
     }
 }

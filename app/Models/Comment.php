@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     use HasFactory;
-}
+
+    protected $fillable = [
+        'body',
+    ];
 
     public function user()
     {
@@ -19,3 +22,4 @@ class Comment extends Model
     {
         return $this->belongsTo(Post::class);
     }
+}
