@@ -46,7 +46,7 @@ class CommentController extends Controller
             ->route('posts.show' , $post)
             ->with('notice', 'コメントを登録しました');
         
-        }
+        
     }
 
     /**
@@ -81,3 +81,4 @@ class CommentController extends Controller
         //
     }
 
+}
