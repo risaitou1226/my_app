@@ -4,7 +4,8 @@
             <br>
             <br>
             <br>
-                <h1>Morning☀ Menu</h1><br>
+                <div class="text-base"><h1>Morning ☀ Menu</h1></div>
+                <br>
                     <ul class="justify-center">
                         <li>トーストセット 選べるペースト</li>
                         <li>季節のスープ</li>
