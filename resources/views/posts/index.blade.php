@@ -1,4 +1,38 @@
 <x-app-layout>
+<div class="w-full text-center font-mono bg-rose-200">
+            <br>
+            <br>
+            <br>
+            <br>
+                <h1>Morning☀ Menu</h1><br>
+                    <ul class="justify-center">
+                        <li>トーストセット 選べるペースト</li>
+                        <li>季節のスープ</li>
+                        <li>ドリンク</li>
+                        <li>coffee (冷たいcold、温かいhot)</li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1>Lunch Menu</h1>
+                    <br>
+                        <li>お肉かお魚の定食</li>
+                        <li>季節のスープ</li>
+                        <li>ドリンク</li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <h1>Dinner Menu</h1>
+                    <br> 
+                        <li>店主のきまぐれ</li>
+                        <li>季節のスープ</li>
+                        <li>ビール、ソフトドリンク各種</li>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            </div>
     <!-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Posts.index') }}
